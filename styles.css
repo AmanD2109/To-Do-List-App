@@ -1,0 +1,108 @@
+/* global styles for the page */
+body {
+    font-family: Arial, sans-serif; 
+    background: linear-gradient(135deg, #667eea, #764ba2); 
+    margin: 0;
+    padding: 0;
+    color: #fff; 
+}
+
+/* Style the main container */
+.container {
+    max-width: 600px; 
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2); 
+    border-radius: 8px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+    backdrop-filter: blur(10px); /* Blur background */
+}
+
+/* Style the main heading */
+h1 {
+    text-align: center; /* Center the text */
+    font-size: 24px; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Layout for input section */
+.input-section {
+    display: flex;
+    justify-content: space-between; 
+    margin-bottom: 20px;
+}
+
+/* Style for the input text field */
+input[type="text"] {
+    flex: 1; 
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.8); 
+    color: #333;
+}
+
+/* Style for buttons */
+button {
+    padding: 10px 15px;
+    background-color: #ff6b6b; 
+    color: white;
+    border: none;
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: 0.3s ease;
+}
+
+/* Change button appearance */
+button:hover {
+    background-color: #ee5253; 
+    transform: scale(1.05); 
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style individual list items */
+li {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Style completed list items */
+li.completed {
+    text-decoration: line-through; 
+    color: #ccc; 
+}
+
+/* Style edit and delete buttons */
+.edit-button, .delete-button {
+    background: none; 
+    border: none;
+    cursor: pointer; 
+    color: #ff6b6b;
+    transition: 0.3s ease; 
+}
+
+/* Change appearance on hover */
+.edit-button:hover, .delete-button:hover {
+    text-decoration: underline; 
+    color: #ee5253; 
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .input-section {
+        flex-direction: column; 
+    }
+
+    input[type="text"] {
+        margin-bottom: 10px; 
+    }
+}
